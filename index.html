@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Dibrahkol - Atacarejo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="#">
+          <img src="logo.jpg" alt="" />
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Nossos Serviços</a></li>
+          <li><a href="#">Formas de Pagamento</a></li>
+          <li><a href="#">Fale Conosco</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- ---------------------- OFERTAS -------------------- -->
+      <section id="ofertas" class="ofertas">
+        <div class="tittle">
+          <h1>OFERTAS DO DIA</h1>
+        </div>
+        <div class="flex">
+          <div class="img-background">
+            <div class="img-oferta">
+              <img
+                src="https://scontent.fgyn24-1.fna.fbcdn.net/v/t39.30808-6/397092769_744979444308291_2144498079327568383_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=2EhaBztmcPoAX9Le0F9&_nc_ht=scontent.fgyn24-1.fna&cb_e2o_trans=t&oh=00_AfD9jNQKa725OtrdtYCASXoI5mp9JWyDLwB8HeAiBM5-zQ&oe=654B7652"
+                alt="Página 1"
+              />
+            </div>
+            <button id="verOfertas" class="btn-ofertas">VER OFERTAS</button>
+          </div>
+        </div>
+        <div id="ofertasModal" class="modal-ofertas">
+          <span class="fechar">&times;</span>
+          <div class="modal-content-ofertas">
+            <img
+              class="oferta"
+              src="https://scontent.fgyn24-1.fna.fbcdn.net/v/t39.30808-6/397123634_744979440974958_4532464919747439999_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=gVjyc2PkqxoAX-qVCwx&_nc_oc=AQmcm7FCZn1AHyLdQ7QnQB3yOX795hpCkMXrK9YTD7MQ2jCHa0roRlFBK9fDT0muWsf3YMvxRtlpQ17o2aZZ5nIc&_nc_ht=scontent.fgyn24-1.fna&cb_e2o_trans=t&oh=00_AfDi9MYtkrFP9Dz878ouv6YiUnWJ6iBIpan_O12TECyi7A&oe=654C054F"
+              alt="Oferta 1"
+            />
+            <img
+              class="oferta"
+              src="https://scontent.fgyn24-1.fna.fbcdn.net/v/t39.30808-6/397128368_744979437641625_7501265786060686271_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=EWtgaFHwqxQAX83ZQ2d&_nc_ht=scontent.fgyn24-1.fna&cb_e2o_trans=t&oh=00_AfBzor40N4q_m1AugTZKBGa4lnJW6az1s1arxDsSMSQT1w&oe=654C0D6F"
+              alt="Oferta 2"
+            />
+            <img
+              class="oferta"
+              src="https://scontent.fgyn24-1.fna.fbcdn.net/v/t39.30808-6/397057145_744979447641624_5740076610443984046_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Qxxuzs_fEcEAX8JyVs4&_nc_ht=scontent.fgyn24-1.fna&cb_e2o_trans=t&oh=00_AfBRBD7gIGxbhSOs4inEn3M8Vaz_LR0KR46Fis9v9SqG_Q&oe=654D3ED6"
+              alt="Oferta 3"
+            />
+            <img
+              class="oferta"
+              src="https://scontent.fgyn24-1.fna.fbcdn.net/v/t39.30808-6/397057145_744979447641624_5740076610443984046_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Qxxuzs_fEcEAX8JyVs4&_nc_ht=scontent.fgyn24-1.fna&cb_e2o_trans=t&oh=00_AfBRBD7gIGxbhSOs4inEn3M8Vaz_LR0KR46Fis9v9SqG_Q&oe=654D3ED6"
+              alt="Oferta 3"
+            />
+            <img
+              class="oferta"
+              src="https://scontent.fgyn24-1.fna.fbcdn.net/v/t39.30808-6/397057145_744979447641624_5740076610443984046_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Qxxuzs_fEcEAX8JyVs4&_nc_ht=scontent.fgyn24-1.fna&cb_e2o_trans=t&oh=00_AfBRBD7gIGxbhSOs4inEn3M8Vaz_LR0KR46Fis9v9SqG_Q&oe=654D3ED6"
+              alt="Oferta 3"
+            />
+          </div>
+        </div>
+
+        <div id="imagemModal" class="modal">
+          <span class="fechar">&times;</span>
+          <img
+            id="imagemExpandida"
+            class="imagem-expandida"
+            src=""
+            alt="Imagem Expandida"
+          />
+        </div>
+      </section>
+
+      <!-- ---------------- LISTAS DE COMPRAS ------------------ -->
+      <section id="listaCompras" class="listaCompras">
+        <!-- Conteúdo de LISTA DE COMPRAS -->
+        <div class="tittle">
+          <h1>LISTA DE COMPRAS</h1>
+        </div>
+
+        <div class="content-flex">
+          <div class="content">
+            <input type="text" id="taskInput" placeholder="Adicione um item" />
+            <button id="addBtn" class="addBtn">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <ul id="taskList" class="taskList"></ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- --------------------- DICAS ---------------------- -->
+      <section id="beneficios" class="beneficios">
+        <div class="tittle">
+          <h1>BENEFÍCIOS</h1>
+        </div>
+        <div class="container">
+            <div class="box">
+              <div class="box-img">
+                <img
+                  src="https://img.freepik.com/fotos-gratis/as-macas-vermelhas-frescas-como-pano-de-fundo_78492-3922.jpg?w=740&t=st=1699208596~exp=1699209196~hmac=abdc51f7bd86b5b6a316468322b2bbfa1ec4e17eb6bf8cbd7964728b3a18b32e"
+                  alt="Maça"
+                />
+              </div>
+              <div class="box-txt">
+                Benefícios da Maça:
+                <ul>
+                  <li>Rica em Nutrientes</li>
+                  <li>Promove Saúde Cardíaca</li>
+                  <li>Auxilia na Digestão</li>
+                  <li>Controla o Peso</li>
+                  <li>Benefícios para a Pele</li>
+                  <li>Ajuda a Regular o Açúcar no Sangue</li>
+                </ul>
+              </div>
+        </div>
+            <div class="box">
+              <div class="box-img">
+                <img
+                  src="https://img.freepik.com/fotos-gratis/bando-de-close-up-de-limoes-crus_23-2148317753.jpg?w=740&t=st=1699209456~exp=1699210056~hmac=9804bbc473732ed454be7b79827fc0193d15e6621ab3cc305b21ab3923a9e39c"
+                  alt="Limão"
+                />
+              </div>
+              <div class="box-txt">
+                Benefícios do Limão Siciliano:
+                <ul>
+                  <li>
+                    Ajuda na digestão devido ao teor de fibras solúveis e ácido
+                    cítrico.
+                  </li>
+                  <li>
+                    Rico em vitamina C, fortalece o sistema imunológico e combate
+                    resfriados.
+                  </li>
+                  <li>
+                    Promove a saúde da pele, auxiliando na produção de colágeno.
+                  </li>
+                  <li>
+                    Contribui para a saúde do coração por meio dos antioxidantes e
+                    potássio.
+                  </li>
+                  <li>
+                    Estimula a perda de peso devido ao alto teor de fibras e baixa
+                    caloria.
+                  </li>
+                  <li>
+                    Age como um agente alcalinizante, ajudando a equilibrar o pH do
+                    corpo.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="https://img.freepik.com/fotos-gratis/laranjas-de-fruta-saudavel-na-superficie-da-tenda-do-mercado_176474-493.jpg?w=740&t=st=1699209968~exp=1699210568~hmac=c5dc02b98d1a02d64cbdafacc82d83f29cd5afd42f3b41ff3346aea0888d6339" alt="">
+                </div>
+                <div class="box-txt">
+                    Benefícios da Laranja Bahia:
+                    <ul>
+                        <li>Fonte rica de vitamina C, fundamental para a imunidade.</li>
+                        <li>Contém antioxidantes que combatem radicais livres.</li>
+                        <li>Contribui para a saúde da pele devido aos seus nutrientes.</li>
+                        <li>É rica em fibras, auxiliando na digestão.</li>
+                        <li>Fornece potássio que ajuda na saúde cardiovascular.</li>
+                        <li>Possui propriedades anti-inflamatórias.</li>
+                    </ul>
+                    
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="https://img.freepik.com/fotos-gratis/vista-superior-da-composicao-de-vegetais-frescos-com-berinjelas-no-fundo-branco_140725-140117.jpg?w=740&t=st=1699211055~exp=1699211655~hmac=5e9829ebbc9ba8208b41dd2050f514c7ca51b032ce8368f3b1b2b7d800941f8e" alt="">
+                </div>
+                <div class="box-txt">
+                    Benefícios da Berinjela:
+                    <ul>
+                        <li>Rica em antioxidantes que ajudam a combater os radicais livres no corpo.</li>
+                        <li>Fonte de fibras, auxiliando na digestão e na saúde intestinal.</li>
+                        <li>Reduz o colesterol, promovendo a saúde do coração e prevenindo doenças cardiovasculares.</li>
+                        <li>Contém compostos que ajudam na redução da pressão sanguínea.</li>
+                        <li>Baixo teor calórico, sendo uma opção saudável para dietas de emagrecimento.</li>
+                        <li>Contribui para a saúde cerebral e a melhora da memória.</li>
+                        <li>Benefícios para a saúde óssea devido ao seu teor de nutrientes como potássio e manganês.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="https://images.pexels.com/photos/6060223/pexels-photo-6060223.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                </div>
+                <div class="box-txt">
+                    Benefícios da Batata Doce:
+                    <ul>
+                        <li>Rica em fibras, contribuindo para a saúde digestiva e reduzindo o risco de constipação.</li>
+                        <li>Fonte de vitaminas e minerais, como vitamina A, vitamina C e potássio.</li>
+                        <li>Propriedades antioxidantes, ajudando na prevenção de doenças.</li>
+                        <li>Baixo índice glicêmico, auxiliando no controle do açúcar no sangue.</li>
+                        <li>Fonte de carboidratos complexos, fornecendo energia de forma gradual ao organismo.</li>
+                        <li>Contribui para a saúde ocular devido ao seu teor de vitamina A.</li>
+                        <li>Benefícios para a imunidade devido às suas propriedades antioxidantes.</li>
+                    </ul>                    
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="https://img.freepik.com/fotos-gratis/melao-na-mesa_93675-128143.jpg?w=740&t=st=1699211566~exp=1699212166~hmac=ac52e6a0b94640507feaf7a892ee26faf29f80a257c98580e123445de2e4f8e9" alt="">
+                </div>
+                <div class="box-txt">
+                    Benefícios do Melão:
+                    <ul>
+                        <li>Rico em vitaminas A, C e potássio, contribuindo para a saúde da pele e dos olhos.</li>
+                        <li>Fonte de antioxidantes que ajudam a combater radicais livres e a proteger contra doenças.</li>
+                        <li>Alto teor de água, auxiliando na hidratação e manutenção da saúde renal.</li>
+                        <li>Contribui para a saúde digestiva devido ao seu conteúdo de fibras.</li>
+                        <li>É uma fruta de baixa caloria, ideal para dietas de emagrecimento e controle de peso.</li>
+                        <li>Apresenta propriedades anti-inflamatórias, auxiliando no combate a inflamações.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </section>
+
+<!-- ---------------------- RECEITA DO DIA --------------- -->
+<section id="receita" class="receita">
+    <div class="tittle">
+        <h1>RECEITA DO DIA</h1>
+    </div>
+    <div class="container-receita">
+        <div class="box-receita">
+            <h2>Flan de Chocolate</h2>
+            <div class="box-img">
+                <img src="https://media.istockphoto.com/id/1316738316/pt/foto/chocolate-pannacotta-with-strawberries.jpg?s=612x612&w=0&k=20&c=OgAPMzWzqmssd0BAB_ss4CPzvitfXGrhdDEh8pKNCwQ=" alt="">
+            </div>
+            <div class="box-txt">
+                <button id="verReceitaBtn" class="ver-receita-btn">VER RECEITA</button>
+            </div>
+        </div>
+        <a href="receitas.html">Ver mais receitas <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </div>
+
+    <!-- Modal -->
+<!-- Conteúdo do modal existente -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="fechar" id="fecharModal">&times;</span>
+        <h3>Receita do Flan de Chocolate</h3>
+        <p><strong>Ingredientes:</strong>
+
+            <li>340 g de leite condensado </li>
+            
+            <li>200 g de creme de leite </li>
+            
+            <li>200 ml de leite</li> 
+            
+            <li>10 colheres de sopa de chocolate em pó</li> 
+            
+            <li>1 pacote de gelatina sem sabor </li>
+            
+            <li>Água gelada para dissolver a gelatina </li>
+            
+            <strong>Modo de preparo:</strong>
+            
+            Em um recipiente, coloque a gelatina e a água e misture até dissolver. Reserve. Em um liquidificador, bata o leite condensado, o creme de leite, o leite, o chocolate em pó e a gelatina reservada até obter uma consistência homogênea. Distribua o flan em formas pequenas e leve à geladeira por 2 horas. Desenforme e sirva em seguida.</p>
+        <!-- Conteúdo da receita -->
+    </div>
+</div>
+
+<!-- ---------------------NOSSOS SERVIÇOS----------------- -->
+<section id="nossos-servicos" class="nossos-servicos">
+    <div class="tittle">
+        <h1>Nossos Serviços</h1>
+    </div>
+    <div class="servicos-grid">
+        <div class="servico">
+            <i class="fas fa-seedling"></i>
+            <h3>Hortifruti</h3>
+            <p>Frutas, verduras e legumes selecionados.</p>
+        </div>
+        <div class="servico">
+            <i class="fas fa-bread-slice"></i>
+            <h3>Padaria</h3>
+            <p>Pães e quitandas diariamente novos e de qualidade.</p>
+        </div>
+        <div class="servico">
+            <i class="fas fa-drumstick-bite"></i>
+            <h3>Açougue</h3>
+            <p>Carnes de qualidade e fresquinhas.</p>
+        </div>
+        <div class="servico">
+            <i class="fas fa-hamburger"></i>
+            <h3>Lanchonete</h3>
+            <p>Aconchegante e com ótimas quitandas.</p>
+        </div>
+        <div class="servico">
+            <i class="fas fa-motorcycle"></i>
+            <h3>Delivery</h3>
+            <p>Fazemos entrega dos seus produtos em sua casa.</p>
+        </div>
+        <div class="servico">
+            <i class="fas fa-parking"></i>
+            <h3>Estacionamento</h3>
+            <p>Temos estacionamento próprio para nossos clientes.</p>
+        </div>
+        <div class="servico">
+            <i class="fas fa-cocktail"></i>
+            <h3>Distribuidora de Bebidas</h3>
+            <p>Bebidas variadas e geladas.</p>
+        </div>
+        <div class="servico">
+            <i class="fas fa-smile"></i>
+            <h3>Ótimo Atendimento</h3>
+            <p>Treinamos nossos colaboradores para sempre atendê-los da melhor forma.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ------------------------ CONTATO -------------------- -->
+<section id="contatos" class="contatos">
+    <div class="tittle">
+        <h1>Entre em Contato</h1>
+    </div>
+    <div class="contatos-info">
+        <div class="contato-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Localização</h3>
+            <p>Av. Benjamin Constant, 1174-1284 - Vila Cintra, Pirenópolis - GO, 72980-000</p>
+        </div>
+        <div class="contato-item">
+            <i class="fas fa-phone"></i>
+            <h3>Telefone</h3>
+            <p>(62) 99312-9000</p>
+        </div>
+        <div class="contato-item">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+            <p>dibrahkol@hotmail.com</p>
+        </div>
+    </div>
+    <div class="formulario-contato">
+        <h2>Envie-nos uma mensagem</h2>
+        <form action="https://formspree.io/f/mrgwdakw" method="POST" class="custom-form">
+            <label>
+                Seu nome:
+                <input type="text" name="name" class="input-field" required>
+            </label>
+            <label>
+              Seu email:
+              <input type="email" name="email" class="input-field" required>
+            </label>
+            <label>
+              Sua mensagem:
+              <textarea name="message" class="input-field"></textarea required>
+            </label>
+            <button type="submit" class="submit-button">Enviar</button>
+          </form>
+    </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer-col">
+          <img src="logo.jpg" alt="Logo">
+          <a href="#">Início</a>
+          <a href="#">Sobre</a>
+          <a href="#">Contato</a>
+      </div>
+      <div class="footer-col">
+        <h2>Fale Conosco</h2>
+          <p class="contato">
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+          </p>
+      </div>
+      <div class="footer-col">
+        <h2>Formas de Pagamento</h2>
+          <p class="pagamento">
+          </p>
+          <div class="img-pagamento"><img src="metodos-pagamento-removebg-preview.png"></div>
+      </div>
+  </footer>
+
+
+    <!---------------------- SCRIPT ---------------------->
+    <script src="script.js"></script>
+  </body>
+</html>

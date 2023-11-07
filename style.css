@@ -1,0 +1,564 @@
+@import url('https://fonts.cdnfonts.com/css/flipahaus');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* --------------- CONFIGURAÇÕES GLOBAIS --------------- */
+:root {
+    --cor-principal: #151877;
+    --cor-secundaria: #292CAD;
+
+    --fonte-logo: 'Flipahaus', sans-serif;
+}
+
+.content{
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 0 30px;
+    justify-content: center;
+}
+/* ---------------- CONFIGURAÇÕES GERAIS ---------------- */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tittle {
+    font-family: var(--fonte-logo);
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+}
+button {
+    border: none;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* ------------------------------------------------------ */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background: rgb(41,44,173);
+    background: radial-gradient(circle, #292CAD 0%, #151877 100%);
+}
+
+/* --------------------- Nav Bar ------------------------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #151877;
+}
+
+.logo img {
+    height: 70px;
+    border-radius: 50%;
+}
+
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 6px 16px;
+    font-family: var(--fonte-logo);
+    transition: .3s;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+/* ------------------------------------------------------ */
+.ofertas {
+    width: 100vw;
+    height: 100vh;
+    margin-bottom: 50px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-background {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 430px;
+    border-radius: 5px 5px 0 0;
+    height: 95vh;
+}
+.img-oferta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-oferta img {
+    height: 75vh;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.732);
+} 
+
+.btn-ofertas {
+    background-color: var(--cor-secundaria);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 25px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+.btn-ofertas:hover {
+    background-color: var(--cor-principal);
+}
+
+
+/* Adicione ou atualize estas linhas no seu arquivo styles.css */
+.modal-ofertas {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content-ofertas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    height: 100%;
+}
+.imagem-expandida {
+    max-width: 100%;
+    max-height: 100%;
+    transition: all 0.3s;
+    display: block;
+    margin: 0 auto;
+}
+
+.imagem-expandida.expandida {
+    max-width: initial;
+    max-height: initial;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fechar {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.oferta:hover {
+    transform: scale(1.1);
+}
+
+/* --------------------- TO DO LIST --------------------- */
+section.listaCompras {
+    background-color: #fff;
+    height: 100vh;
+    width: 100vw;
+    margin-bottom: 20px;
+}
+.listaCompras h1 {
+    color: var(--cor-secundaria);
+}
+.content-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    background: rgb(41,44,173);
+    background: radial-gradient(circle, #292CAD 0%, #151877 100%);
+    min-height: 250px;
+    min-width: 400px;
+    padding: 20px;
+    overflow: auto;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 40px;
+    box-shadow: 0 0 30px var(--cor-secundaria);
+}
+
+#taskInput {
+    background-color: transparent;
+    color: #fff;
+    font-weight: 700;
+    width: 90%;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid var(--cor-secundaria);
+    outline: none;
+}
+#taskInput::placeholder {
+    color: #fff;
+}
+
+.addBtn {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+#addBtn:hover {
+    background-color: var(--cor-secundaria);
+}
+
+
+.delete {
+    color: red;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+}
+.taskList li {
+
+    background-color: transparent;
+    border: 1px solid var(--cor-secundaria);
+    color: #fff;
+    font-weight: 700;
+    list-style-type: none;
+    margin-top: 20px;
+    border-radius: 3px;
+}
+
+/* --------------------- DICAS ----------------------- */
+section.beneficios {
+    height: 100vh;
+    width: 100vw;
+    margin-bottom: 550px;
+}
+
+.box {
+    background-color: #333;
+    height: auto;
+    width: 300px;
+    padding: 15px 30px;
+    border-radius: 8px;
+}
+.box-img img {
+    justify-content: center;
+    height: 90%;
+    width: 290px;
+    margin: 5px;
+    border-radius: 8px;
+}
+.box-txt {
+    color: #fff;
+    font-weight: 600;
+}
+.box-txt li {
+    font-weight: 400;
+}
+
+/* ----------------------- receita do dia ----------------- */
+section.receita {
+    height: 100vh;
+    width: 100vw;
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.1);
+}
+.container-receita {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.box-receita {
+    background-color: var(--cor-principal);
+    border: 2px solid var(--cor-secundaria);
+    height: auto;
+    width: 350px;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+}
+.box-txt{
+    font-weight: normal;
+    text-align: center;
+}
+.receita h2 {
+    color: #fff;
+}
+
+.ver-receita-btn {
+    background-color: var(--cor-secundaria);
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    transition: .4s ease;
+}
+.ver-receita-btn:hover {
+    background-color: var(--cor-principal);
+}
+
+.container-receita a {
+    color: #fff;
+    text-decoration: none;
+}
+.container-receita a:hover {
+    color: #ddd;
+    text-decoration: underline;
+}
+
+/* --------------------MODAL---------------------- */
+.modal {
+    display: none; /* Inicia o modal oculto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7); /* Cor do fundo com transparência */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 400px;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.fechar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.fechar:hover,
+.fechar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ---------------------serviços------------------------ */
+#nossos-servicos {
+    margin-top: 150px; 
+    height: 100vh;
+}
+/* Estilos para a seção Nossos Serviços */
+.nossos-servicos {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.nossos-servicos .tittle {
+    margin-bottom: 30px;
+}
+
+.nossos-servicos .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nossos-servicos .servico {
+    width: 30%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nossos-servicos .servico h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.nossos-servicos .servico p {
+    font-size: 16px;
+    color: #666;
+}
+
+.servicos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.servico {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* Estilos para a seção de contatos */
+.contatos {
+    padding: 50px 0;
+}
+
+.tittle {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contatos-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contato-item {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 30%;
+}
+
+.contato-item i {
+    font-size: 24px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.formulario-contato {
+    text-align: center;
+}
+
+.formulario-contato form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.formulario-contato input,
+.formulario-contato textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    outline: none;
+}
+
+.formulario-contato button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.submit-button:hover {
+    background-color: var(--cor-secundaria);
+}
+
+
+
+
+.footer {
+    background: rgb(41,44,173);
+    background: radial-gradient(circle, #292CAD 0%, #151877 100%);
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100%;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-col img {
+    max-width: 100%;
+    max-height: 100px;
+    border-radius: 50%;
+}
+
+.footer-col h2 {
+    font-family: var(--fonte-logo);
+    color: #fff;
+    margin-top: 10px;
+}
+
+.footer-col a {
+    text-decoration: none;
+    color: #666;
+    margin: 5px 0;
+    transition: .4s;
+}
+.footer-col a:hover {
+    color: #fff;
+}
+
+.footer-col p.contato i, .footer-col p.pagamento i {
+    margin-right: 5px;
+}
+
+.contato {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.footer-col .contato i {
+    font-size: 20px;
+    color: #fff;
+    padding: 10px;
+    background-color: var(--cor-secundaria);
+    border-radius: 50%;
+    transition: .3s;
+}
+.footer-col .contato i:hover {
+    background-color: var(--cor-principal);
+}
+
+.footer-col p.contato a, .footer-col p.pagamento a {
+    display: flex;
+    align-items: center;
+}
